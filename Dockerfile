@@ -10,6 +10,7 @@ FROM ubuntu
 MAINTAINER Maintaner Tom Wu <tomooodesign@gmail.com>
 
 # Pre-requisite for compiling Okapi
+RUN apt-get update
 RUN apt-get install -y gcc bison flex default-jdk
 
 # jdk 7 and gcc 4.8
