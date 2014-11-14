@@ -9,8 +9,6 @@ FROM ubuntu
 # File Author / Maintainer
 MAINTAINER Maintaner Tom Wu <tomooodesign@gmail.com>
 
-RUN ln -sf /bin/bash /bin/sh
-
 # Pre-requisite for compiling Okapi
 RUN apt-get update
 RUN apt-get install -y gcc bison flex default-jdk git
@@ -23,4 +21,4 @@ RUN mkdir -p /home/okapi
 RUN git clone https://github.com/canadatom/okapi.git /home/okapi
 
 WORKDIR /home/okapi
-CMD echo "Welcome to Proof of Concept - Automate Okapi Workflow" && ll
+CMD echo "Welcome to Proof of Concept - Automate Okapi Workflow" && ls -la
