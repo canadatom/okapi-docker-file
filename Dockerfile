@@ -20,4 +20,4 @@ RUN cp /usr/lib/jvm/java-7-openjdk-amd64/include/jni_md.h /usr/lib/gcc/x86_64-li
 RUN mkdir -p /home/okapi
 RUN git clone https://github.com/canadatom/okapi.git /home/okapi
 
-CMD echo "Welcome to Proof of Concept - Automate Okapi Workflow" && cd /home/okapi/okapi && ll
+CMD echo "Welcome to Proof of Concept - Automate Okapi Workflow" && cd /home/okapi && ll
