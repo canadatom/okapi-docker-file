@@ -21,5 +21,4 @@ RUN mkdir -p /home/okapi
 RUN git clone https://github.com/canadatom/okapi.git /home/okapi
 
 WORKDIR /home/okapi
-CMD echo "Welcome to Proof of Concept - Automate Okapi Workflow" && ll
-ENTRYPOINT /bin/bash
+CMD /bin/bash && echo "Welcome to Proof of Concept - Automate Okapi Workflow" && ll
