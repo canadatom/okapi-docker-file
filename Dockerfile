@@ -11,7 +11,7 @@ MAINTAINER Maintaner Tom Wu <tomooodesign@gmail.com>
 
 # Pre-requisite for compiling Okapi
 RUN apt-get update
-RUN apt-get install -y gcc make bison flex openjdk-6-jdk git vim
+RUN apt-get install -y gcc gcc-multilib libc6-i386 make bison flex openjdk-6-jdk git vim
 
 # jdk 7 and gcc 4.8
 RUN cp /usr/lib/jvm/java-1.6.0-openjdk-amd64/include/jni.h /usr/lib/gcc/x86_64-linux-gnu/4.8/include
